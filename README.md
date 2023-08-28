@@ -2,7 +2,4 @@ Hey, welcome to the repository,  a potfolio project repository marking the last 
 
 CONTRIBUTORS:
 
-1. EMMANUEL IBE ceaselessflows@yahoo.com
-2. 
-
-
+1. EMMANUEL IBE ceaselessflows@yahoo.com (Software Engineer, Full Stack)
