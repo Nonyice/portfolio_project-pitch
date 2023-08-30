@@ -3,3 +3,5 @@ Hey, welcome to the repository,  a potfolio project repository marking the last 
 CONTRIBUTORS:
 
 1. EMMANUEL IBE ceaselessflows@yahoo.com (Software Engineer, Full Stack)
+
+2. OKON EMMANUEL emani23paulo@gmail.com (Software Engineer, Backend dev)
