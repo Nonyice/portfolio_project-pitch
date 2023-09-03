@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leave a Review</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Leave a Review</h1>
+  <form method="post" action="/submit_review" enctype="multipart/form-data">
+    <label for="name">Name or Alias:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name or alias" required>
+    
+    <label for="review">Review Message:</label>
+    <textarea id="review" name="review" placeholder="Write your review here" rows="5" required></textarea>
+    
+    <label for="image_data">Upload Image:</label>
+    <input type="file" id="image_data" name="image_data">
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

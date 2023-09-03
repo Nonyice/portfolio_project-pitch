@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm Order</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: green;
+      color: yellow;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    p {
+      margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: yellow;
+      color: green;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Confirm Order</h1>
+  <p>Total Price: N{{ total_price }}</p>
+  <p>Customer Name: {{ customer_name }}</p>
+  <p>Phone Number: {{ phone_number }}</p>
+  <p>Location: {{ location }}</p>
+  <p>Order Details: {{ order_details }}</p>
+
+  <form method="post" action="/confirm_order">
+    <input type="hidden" name="customer_name" value="{{ customer_name }}">
+    <input type="hidden" name="phone_number" value="{{ phone_number }}">
+    <input type="hidden" name="location" value="{{ location }}">
+    <input type="hidden" name="order_details" value="{{ order_details }}">
+    <input type="hidden" name="total_price" value="{{ total_price }}">
+
+    <button type="submit" name="confirm_button" value="confirm">Confirm</button>
+    <button type="submit" name="confirm_button" value="cancel">Cancel</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>WELCOME TO THE OFFICIAL PAGE OF ORDER APP</title>
+  <link rel="stylesheet" type="text/css" href="/static/styles.css">
+  <link rel="stylesheet" href="https://cdn.cloudwares.com/css/webfonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  
+</head>
+<body>
+  <div class="main">
+
+    <header>
+      <nav class="navbar">
+      <!--Logo-->
+      <div class="logo">
+      <img src="/static/images/logo.jpg">
+      </div>
+      
+      <div class="logo-rider">
+        <h1 style="font-family: cursive; color: yellow;">ORDER APP</h1>
+        <h6 style="font-family: cursive; color: blue; font-size: large;">MEAL TREAT</h6>
+        <p><i style="justify-content: center; color: aliceblue;">...We are at your srvice</i></p>
+      </div>
+      <div class="menu">
+          
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Our Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+      </div>
+        </nav>
+        <a href="/order" class="moving_link" style="color: greenyellow; font-style: italic;">Click me to place your order!</a>
+          
+        </header>
+        
+      
+        <div class="container">
+          
+          <div class="slider">
+          <img src="/static/images/rice.jpg" alt="Rice">
+          <img src="/static/images/fruity.jpg" alt="Beans">
+          <img src="/static/images/pie2.jpg" alt="Meat">
+          <img src="/static/images/cake1.jpg" alt="cake">
+          <img src="/static/images/cake2.jpg" alt="cake">
+          <img src="/static/images/cake3.jpg" alt="cake">
+          <img src="/static/images/cake4.jpg" alt="cake">
+          <img src="/static/images/cake5.jpg" alt="cake">
+          <img src="/static/images/cake6.jpg" alt="cake">
+          <img src="/static/images/jollof.jpg" alt="cake">
+          <img src="/static/images/vege.jpg" alt="cake">
+          <img src="/static/images/eggsauce.jpg" alt="cake">
+          <img src="/static/images/IMG-20230627-WA0009.jpg" alt="cake">
+          <img src="/static/images/IMG-20230627-WA0013.jpg" alt="cake">
+          <img src="/static/images/IMG-20230627-WA0014.jpg" alt="cake">
+          <div class="buttons">
+            <button id="prevBtn">Prev</button>
+            <button id="nextBtn">Next</button>
+          </div>
+        </div>
+      
+        <div class="banner">
+            <img src="/static/images/IMG-20230701-WA0002.jpg" height="180px" width="100%">
+        </div>
+        <div class="food-menu">
+          <h4> Check out our MENU</h4>
+          <p>Our available menu includes but not limited to:</p>
+          <li>Fried Rice</li>
+          <li>Jollof Rice</li>
+        <li>White Rice</li>
+          <li>Okro Soup</li>
+          <li>Moi-Moi</li>
+          <li>Noddles & Egg</li>
+          <li>Chicken Stew</li>
+          <li>Vegetable Soup</li>
+          <li>Egusi Soup</li>
+          <p><li>...and all manner of confectioneries</li></p>
+        </div>
+      </div>
+      
+      <div class="container2">
+        <div id="heading">
+          <h3><i>What our customers are saying!</i></h3>
+        </div>
+        <div class="testimonials">
+          
+        
+          <div class="testimonial">
+            <img src="/static/images/ind.png">
+            <h5>John Doe</h5>
+            <p>Lorem consectetur adipiscing elit. Nullam Etia malesuada</p>
+          </div>
+          <div class="testimonial">
+            <img src="" height="100px" width="100px">
+            <h5>Jane Smith</h5>
+            <p>Nullam in ante at lorem rhoncus lacinia Etiam sed ex vitae tortor fringilla malesuada.</p>
+          </div>
+          <div class="testimonial">
+            <img src="" height="100px" width="100px">
+            <h5>David Johnson</h5>
+            <p>Etiam sed ex vitae tortor fringilla malesuada.</p>
+          </div>
+          {% for review in reviews %}
+          <div class="testimonial">
+
+            <img src="{{ review.image }}" alt="{{ review.name }}">
+                <h5>{{ review.name }}</h5>
+                <p>{{ review.message }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      
+        <div class="review">
+          <a href="/submit_review">Leave a review</a>
+        </div>
+
+        <div class="hungry">
+
+          <h3><i>HUNGRY? WORRY LESS FOR WE GOT YA! CLICK THE CALLOUT </i></h3>
+        </div>
+        
+        <div class="place-order">
+          <img src="/static/images/place order img.png">
+          <p id="callout"><a href="/order">Place Your Order Now!</a></p>
+        </div>
+
+        <div class="patronize-us">
+          <h3>WHY CHOSE US?</h3>
+          <p>We are ever ready to meet your expectations. Try us today for your mouth watering delicacies, African cuisine and otherwise as you so desire. <br>
+          You also want to experience our out door catering services. A trial will wow! you. <br>
+         LOOKING FORWARD TO SEEING YOU!</p>
+        </div>
+        
+        
+      
+      </div>
+
+      <footer>
+        <div id="first-line">
+          <div class="privacy">
+          <p><a href="privacy.html">Privacy</a></p>
+        </div>
+
+        <div class="terms">
+          <p><a href="terms.html">Terms</a></p>
+        </div>
+    
+        <div class="email">
+          <h6>E-MAIL:</h6><p>email@example.com</p>
+        </div>
+    
+        <div class="phone">
+          <h6>CALL US:</h6>
+          <p>(+234) 123 1234</p><br>
+        </div>
+      </div>
+        
+    
+        <div class="order">
+          <p><a href="/order">Place Your Order Now!</a></p>
+        </div>
+    
+          <div class="social-icons">
+            
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            
+        </div>
+        <div class="copyright">
+            <p>copyright &copy;2023 <a href="#">ALX cohort 9: All Rights Reserved</a></p>
+        </div>
+        <div class="power">
+            <p>Powered By Emmanuel Ibe & Emmanuel Okon for ALX Group Project-Cohort 9</p>
+        </div>
+        
+      </footer>
+    
+
+      
+  </div>
+ 
+    
+  
+  
+  
+  <script src="/static/slide.js"></script>
+  <script src="/static/testimonial.js"></script>
+  <script src="/static/callout.js"></script>
+  <script src="add_review.js"></script>
+</body>
+</html>

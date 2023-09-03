@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Place an Order</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: green;
+      color: yellow;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      margin-left: 30%;
+    }
+    
+    input[type="text"],
+    input[type="submit"] {
+      width: 50%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid yellow;
+      background-color: green;
+      color: yellow;
+      margin-left: 30%;
+    }
+
+    input[type="submit"]:hover{
+      background-color: yellowgreen;
+      box-shadow: 0px 1px;
+      border-radius: 5px;
+    }
+    
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    /*APPLY MEDIA QUERRIES*/
+@media (max-width: 768px){
+  input[type="text"],
+    input[type="submit"] {
+      width: 90%;
+      margin-left: 0;
+} 
+  label {
+    margin-left: 0;
+}
+  </style>
+</head>
+<body>
+  <h1>Place an Order</h1>
+  <form method="post" action="/order">
+    <label for="customer_name">Customer Name:</label>
+    <input type="text" id="customer_name" name="customer_name" required><br><br>
+
+    <label for="phone_number">Phone Number:</label>
+    <input type="text" id="phone_number" name="phone_number" required><br><br>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required><br><br>
+    
+    <label>Order Details:</label>
+    <label>
+      <input type="checkbox" name="order_details" value="White Rice/Chicken">
+      White Rice/Chicken
+    </label><br>
+    <label>
+      <input type="checkbox" name="order_details" value="Vegetable Soup/Fufu/Beef">
+      Vegetable Soup/Fufu/Beef
+    </label><br>
+    <!-- Add more options for other food items -->
+    
+    <br><br>
+    <input type="submit" value="Place Order">
+  </form>
+</body>
+</html>
